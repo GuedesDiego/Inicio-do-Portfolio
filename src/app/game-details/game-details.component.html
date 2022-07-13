@@ -1,0 +1,39 @@
+
+<div class="container">
+  <app-header></app-header>
+  <div class="conteudo">
+
+    <div class="imagem">
+     <div class="imagem-principal">
+        <img src={{game?.photos[0].url}} width="630px" height="550px" />
+     </div>
+     <div class="imagens">
+        <img *ngFor="let image of game?.photos" class="item-imagem" src={{image?.url}} alt="">
+     </div>
+    </div>
+
+    <div class="furmulario">
+      <div class="">
+        <div class="form-linha">
+          <button type="button" class="btn btn-danger tamanho">{{game?.rating}}</button>
+          <span class="item">Nome jogo: <span>{{game?.title}}</span></span>
+          <span class="item">Resumo: <span>{{game?.resume}}</span></span>
+          <hr>
+          <span class="item">Genero: <span>{{game?.genres}}</span></span>
+          <span class="item">Preço do jogo: <span style="color: red;">$ {{game?.mediumPrice}}</span></span>
+          <span class="item">Total de votos: <span>{{game?.totalVotes}}</span></span>
+          <!-- <pre >{{game | json}}</pre> -->
+          <button (click)="votar()" type="button" class="btn btn-danger tamanho-botao">Votar agora</button>
+          <input #teste type="range" min="0" max="10" step="0.01">
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="descricao">
+    <div style="color: red; text-align: center;">Description</div>
+    <span>{{game?.description}}</span>
+  </div>
+</div>
+

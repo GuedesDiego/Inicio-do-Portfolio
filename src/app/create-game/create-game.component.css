@@ -1,0 +1,19 @@
+
+.conteudo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-linha{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.cor{
+  background-color: brown;
+}
+.baner{
+  margin-bottom: 20px;
+}

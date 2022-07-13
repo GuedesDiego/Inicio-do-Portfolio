@@ -1,0 +1,49 @@
+.item-imagem
+{
+  width: 220px;
+  height: 150px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px #dce1e1;
+}
+
+.imagem{
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  margin: 20px 0px;
+  margin-inline: 11px;
+}
+/* .valor,
+.titulo{
+  margin-top: 15px;
+  color: #fff;
+  text-align: right;
+} */
+
+.tamanho{
+  display: inline;
+  width: 70px;
+  height: 35px;
+  align-items: center;
+  margin: 0px 5px;
+  border-radius: 30px;
+}
+
+.alinhar{
+  width: 300px;
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 250px;
+}
+
+.botoes{
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+
+}
+
+.titulo{
+  color: white;
+  margin: 10px 0px;
+}

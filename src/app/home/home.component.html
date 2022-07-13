@@ -1,0 +1,21 @@
+<div class="container">
+  <app-header></app-header>
+  <div>
+    <app-carousel [images] = "images" [autoSlide] =true></app-carousel>
+     <div class="imagem" *ngFor="let game of listaGame ">
+        <img class="item-imagem" src={{game.photos[0]?.url}} alt="" (click)="getGameById(game._id)">
+
+          <div class="titulo" >{{game.description.substr(0, 30)}}... </div>
+          <div class="titulo">R$ {{game.mediumPrice}}</div>
+          <div class="botoes">
+            <button type="button" class="btn btn-danger tamanho">{{game.rating}}</button>
+            <button (click)="excluirGame(game._id)" type="button" class="btn btn-danger tamanho">Excluir</button>
+          </div>
+
+     </div>
+     </div>
+
+ </div>
+
+
+

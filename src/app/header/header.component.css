@@ -1,0 +1,44 @@
+
+.conteudo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-linha{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.example-spacer {
+  flex: 1 1 auto;
+  
+}
+.cor{
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+}
+.baner{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.link-home{
+  color: rgb(70, 70, 70);
+  margin-top: 40px;
+  margin-left: 20px;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer{
+ width: 100%;
+ position: fixed;
+ bottom: 0;
+ right: 0;
+ background: black;
+ color: rgb(163, 180, 12);
+ height: 20px;
+ display: flex;
+}
+
+
+
